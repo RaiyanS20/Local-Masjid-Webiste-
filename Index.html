@@ -1,12 +1,83 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lobatse Masjid</title>
-<link rel="stylesheet" href="style.css" />
+    <title>Lobatse Masjid</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Links to Font Awesome Library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
-  <script type="text/javascript"></script>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Lobatse Masjid</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#salah-times">Salah Times</a></li>
+                <li><a href="#updates">Updates & Recordings</a></li>
+                <li><a href="#imaams">Imaams</a></li>
+      
+                <li><a href="#contact">Contact Details</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section id="hero-section">
+            <div class="hero-title">
+                <h1>Welcome to Lobatse Masjid</h1>
+                <img src="assets/images/lobatse masjid.png" alt="Mosque" class="hero-image" />
+            </div>
+        </section>
+
+        <!-- Salah Times Section -->
+        <section id="salah-times">
+            <h2>Salah Times</h2>
+            <div class="salah-times-table">
+                <table>
+                    <tr>
+                        <th>Fajr</th>
+                        <td>Adhan: 04:20</td>
+                        <td>Salah: 04:40</td>
+                    </tr>
+                    <tr>
+                        <th>Zuhr</th>
+                        <td>Adhan: 13:00</td>
+                        <td>Salah: 13:15</td>
+                    </tr>
+                    <tr>
+                        <th>Asr</th>
+                        <td>Adhan: 17:15</td>
+                        <td>Salah: 17:30</td>
+                    </tr>
+                    <tr>
+                        <th>Maghrib</th>
+                        <td>Adhan: 18:35</td>
+                        <td>Salah: 18:35</td>
+                    </tr>
+                    <tr>
+                        <th>Isha</th>
+                        <td>Adhan: 20:00</td>
+                        <td>Salah: 20:15</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!-- External JavaScript -->
+    <script type="text/javascript">
+        // JavaScript for toggling sidebar in mobile view
+        function toggleMenu() {
+            document.querySelector(".sidebar").classList.toggle("active");
+        }
+    </script>
 </body>
-</html>html
+</html>

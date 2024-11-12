@@ -1,0 +1,111 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.sidebar .logo {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 15px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #FF5100;
+}
+
+/* Main content styling */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+}
+
+#hero-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-title h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Salah Times Section */
+#salah-times {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#salah-times h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.salah-times-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.salah-times-table th, .salah-times-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.salah-times-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.salah-times-table td {
+  color: #333;
+}
+
+.salah-times-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
