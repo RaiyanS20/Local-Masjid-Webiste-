@@ -20,9 +20,7 @@
                 <li><a href="#salah-times">Salah Times</a></li>
                 <li><a href="#updates">Updates & Recordings</a></li>
                 <li><a href="#imaams">Imaams</a></li>
-      
                 <li><a href="#contact">Contact Details</a></li>
-
             </ul>
         </nav>
     </div>
@@ -67,6 +65,10 @@
                         <td>Adhan: 20:00</td>
                         <td>Salah: 20:15</td>
                     </tr>
+                    <!-- Row for Live Clock -->
+                    <tr>
+                        <th colspan="3" id="current-time" style="text-align: center;">Loading current time...</th>
+                    </tr>
                 </table>
             </div>
         </section>
@@ -74,6 +76,24 @@
 
     <!-- External JavaScript -->
     <script type="text/javascript">
+        // Function to update the live clock
+        function updateClock() {
+            const clockElement = document.getElementById("current-time");
+
+            // Get the current time
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, "0");
+            const minutes = String(now.getMinutes()).padStart(2, "0");
+            const seconds = String(now.getSeconds()).padStart(2, "0");
+
+            // Format the time as HH:MM:SS
+            clockElement.textContent = `Current Time: ${hours}:${minutes}:${seconds}`;
+        }
+
+        // Update the clock immediately and set an interval to update every second
+        updateClock();
+        setInterval(updateClock, 1000);
+
         // JavaScript for toggling sidebar in mobile view
         function toggleMenu() {
             document.querySelector(".sidebar").classList.toggle("active");
